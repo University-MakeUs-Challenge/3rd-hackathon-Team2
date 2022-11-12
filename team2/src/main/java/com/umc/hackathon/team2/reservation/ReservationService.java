@@ -32,4 +32,14 @@ public class ReservationService {
             throw new BaseException(DATABASE_ERROR);
         }
     }
+
+    //예약 취소
+    public void deleteReservation(int reservationIdx) throws BaseException {
+        try {
+            int result = reservationDao.updateReservationStatus(reservationIdx);
+        }
+        catch (Exception e) {
+            throw new BaseException(DATABASE_ERROR);
+        }
+    }
 }
