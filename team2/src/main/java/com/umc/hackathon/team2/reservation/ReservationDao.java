@@ -4,10 +4,16 @@ import com.umc.hackathon.team2.reservation.model.PostReservationReq;
 import com.umc.hackathon.team2.reservation.model.PostReservationRes;
 import com.umc.hackathon.team2.reservation.model.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Locale;
 
 @Repository
 public class ReservationDao {
@@ -27,11 +33,17 @@ public class ReservationDao {
     private String status;*/
 
     // 예약 생성
-    public int createReservation(int userIdx, PostReservationReq postReservationReq) {
+    public int createReservation(int userIdx, PostReservationReq postReservationReq) throws java.text.ParseException {
         String insertReservationQuery =
                 "INSERT INTO Reservation(userIdx, participationDate, price)" +
                         "VALUES (?, ?, ?);";
-        Object[] insertReservationParams = new Object[]{userIdx, postReservationReq.getParticipationDate(),
+
+        String reservationDateString = postReservationReq.getParticipationDate();
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.US);
+        LocalDate date = LocalDate.parse(reservationDateString, formatter);
+
+        Object[] insertReservationParams = new Object[]{userIdx, date,
                 postReservationReq.getPrice()};
         this.jdbcTemplate.update(insertReservationQuery, insertReservationParams);
 
