@@ -22,7 +22,8 @@ public class ReservationDao {
 
     @Autowired
     public void setDataSource(DataSource dataSource){
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+
+        this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
 /*private int centerIdx;
@@ -35,16 +36,16 @@ public class ReservationDao {
     // 예약 생성
     public int createReservation(int userIdx, PostReservationReq postReservationReq) throws java.text.ParseException {
         String insertReservationQuery =
-                "INSERT INTO Reservation(userIdx, participationDate, price)" +
-                        "VALUES (?, ?, ?);";
+                "INSERT INTO Reservation(userIdx, centerIdx, reservation_date, centerReservationIdx, participation_date, price, updateAt, status)" +
+                        "VALUES (?,?, ?, ?, ?, ?, ?, ?);";
 
         String reservationDateString = postReservationReq.getParticipationDate();
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.US);
         LocalDate date = LocalDate.parse(reservationDateString, formatter);
 
-        Object[] insertReservationParams = new Object[]{userIdx, date,
-                postReservationReq.getPrice()};
+        Object[] insertReservationParams = new Object[]{userIdx, postReservationReq.getCenterIdx(), "22-11-13", postReservationReq.getCenterReservationIdx(), date,
+                postReservationReq.getPrice(), null, "ACTIVE"};
         this.jdbcTemplate.update(insertReservationQuery, insertReservationParams);
 
         String lastInsertIdQuery = "select last_insert_id()";

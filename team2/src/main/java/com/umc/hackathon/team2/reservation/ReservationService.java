@@ -29,6 +29,7 @@ public class ReservationService {
             int reservationIdx = reservationDao.createReservation(userIdx, postReservationReq);
             return new PostReservationRes(reservationIdx);
         } catch (Exception exception) {
+            exception.printStackTrace();
             throw new BaseException(DATABASE_ERROR);
         }
     }
