@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import SwiftUI
 
 class DetailView: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "실내 암벽 등반"
+        
 
+        
         // Do any additional setup after loading the view.
     }
     
@@ -23,7 +29,7 @@ class DetailView: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-    }
+    }/url
     */
 
 }
