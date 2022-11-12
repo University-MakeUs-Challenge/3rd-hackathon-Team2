@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    url: jdbc:mysql://wanty-db-dev.czrotywie6qk.ap-northeast-2.rds.amazonaws.com
+    password: pass1234
