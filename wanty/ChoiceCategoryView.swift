@@ -1,13 +1,13 @@
 //
-//  bookListView.swift
+//  ChoiceCategoryView.swift
 //  wanty
 //
-//  Created by 박윤빈 on 2022/11/12.
+//  Created by Da Hae Lee on 2022/11/12.
 //
 
 import UIKit
 
-class bookListView: UIViewController {
+class ChoiceCategoryView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

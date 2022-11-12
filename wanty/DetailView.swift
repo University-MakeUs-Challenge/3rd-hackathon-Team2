@@ -1,5 +1,5 @@
 //
-//  mapView.swift
+//  detailView.swift
 //  wanty
 //
 //  Created by 박윤빈 on 2022/11/12.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class mapView: UIViewController {
+class DetailView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

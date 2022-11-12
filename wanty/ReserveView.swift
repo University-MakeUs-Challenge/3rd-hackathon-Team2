@@ -1,5 +1,5 @@
 //
-//  detailView.swift
+//  reserveView.swift
 //  wanty
 //
 //  Created by 박윤빈 on 2022/11/12.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class detailView: UIViewController {
+class ReserveView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,31 +9,33 @@
 /* Begin PBXBuildFile section */
 		05474C01291FCF5100FCF7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C00291FCF5100FCF7A2 /* AppDelegate.swift */; };
 		05474C03291FCF5100FCF7A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C02291FCF5100FCF7A2 /* SceneDelegate.swift */; };
-		05474C05291FCF5100FCF7A2 /* choiceActView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C04291FCF5100FCF7A2 /* choiceActView.swift */; };
+		05474C05291FCF5100FCF7A2 /* ChoiceActView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C04291FCF5100FCF7A2 /* ChoiceActView.swift */; };
 		05474C0A291FCF5300FCF7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05474C09291FCF5300FCF7A2 /* Assets.xcassets */; };
 		05474C0D291FCF5300FCF7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05474C0B291FCF5300FCF7A2 /* LaunchScreen.storyboard */; };
-		05474C19291FD39600FCF7A2 /* choiceLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C18291FD39600FCF7A2 /* choiceLocalView.swift */; };
-		05474C1B291FD3BA00FCF7A2 /* mapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1A291FD3BA00FCF7A2 /* mapView.swift */; };
-		05474C1F291FD3F700FCF7A2 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1E291FD3F700FCF7A2 /* detailView.swift */; };
-		05474C21291FD40B00FCF7A2 /* reserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C20291FD40B00FCF7A2 /* reserveView.swift */; };
-		05474C23291FD41F00FCF7A2 /* finReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C22291FD41F00FCF7A2 /* finReserveView.swift */; };
-		05474C25291FD93400FCF7A2 /* bookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C24291FD93400FCF7A2 /* bookListView.swift */; };
+		05474C19291FD39600FCF7A2 /* ChoiceLocalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C18291FD39600FCF7A2 /* ChoiceLocalView.swift */; };
+		05474C1B291FD3BA00FCF7A2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1A291FD3BA00FCF7A2 /* MapView.swift */; };
+		05474C1F291FD3F700FCF7A2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1E291FD3F700FCF7A2 /* DetailView.swift */; };
+		05474C21291FD40B00FCF7A2 /* ReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C20291FD40B00FCF7A2 /* ReserveView.swift */; };
+		05474C23291FD41F00FCF7A2 /* FinReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C22291FD41F00FCF7A2 /* FinReserveView.swift */; };
+		05474C25291FD93400FCF7A2 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C24291FD93400FCF7A2 /* BookListView.swift */; };
+		6859E48F291FDBEB0053F973 /* ChoiceCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05474BFD291FCF5100FCF7A2 /* wanty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wanty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05474C00291FCF5100FCF7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05474C02291FCF5100FCF7A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		05474C04291FCF5100FCF7A2 /* choiceActView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceActView.swift; sourceTree = "<group>"; };
+		05474C04291FCF5100FCF7A2 /* ChoiceActView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceActView.swift; sourceTree = "<group>"; };
 		05474C09291FCF5300FCF7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05474C0C291FCF5300FCF7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05474C0E291FCF5300FCF7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05474C18291FD39600FCF7A2 /* choiceLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = choiceLocalView.swift; sourceTree = "<group>"; };
-		05474C1A291FD3BA00FCF7A2 /* mapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapView.swift; sourceTree = "<group>"; };
-		05474C1E291FD3F700FCF7A2 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
-		05474C20291FD40B00FCF7A2 /* reserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveView.swift; sourceTree = "<group>"; };
-		05474C22291FD41F00FCF7A2 /* finReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finReserveView.swift; sourceTree = "<group>"; };
-		05474C24291FD93400FCF7A2 /* bookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookListView.swift; sourceTree = "<group>"; };
+		05474C18291FD39600FCF7A2 /* ChoiceLocalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceLocalView.swift; sourceTree = "<group>"; };
+		05474C1A291FD3BA00FCF7A2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		05474C1E291FD3F700FCF7A2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		05474C20291FD40B00FCF7A2 /* ReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveView.swift; sourceTree = "<group>"; };
+		05474C22291FD41F00FCF7A2 /* FinReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinReserveView.swift; sourceTree = "<group>"; };
+		05474C24291FD93400FCF7A2 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +70,14 @@
 			children = (
 				05474C00291FCF5100FCF7A2 /* AppDelegate.swift */,
 				05474C02291FCF5100FCF7A2 /* SceneDelegate.swift */,
-				05474C04291FCF5100FCF7A2 /* choiceActView.swift */,
-				05474C24291FD93400FCF7A2 /* bookListView.swift */,
-				05474C18291FD39600FCF7A2 /* choiceLocalView.swift */,
-				05474C1A291FD3BA00FCF7A2 /* mapView.swift */,
-				05474C1E291FD3F700FCF7A2 /* detailView.swift */,
-				05474C20291FD40B00FCF7A2 /* reserveView.swift */,
-				05474C22291FD41F00FCF7A2 /* finReserveView.swift */,
+				6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */,
+				05474C04291FCF5100FCF7A2 /* ChoiceActView.swift */,
+				05474C24291FD93400FCF7A2 /* BookListView.swift */,
+				05474C18291FD39600FCF7A2 /* ChoiceLocalView.swift */,
+				05474C1A291FD3BA00FCF7A2 /* MapView.swift */,
+				05474C1E291FD3F700FCF7A2 /* DetailView.swift */,
+				05474C20291FD40B00FCF7A2 /* ReserveView.swift */,
+				05474C22291FD41F00FCF7A2 /* FinReserveView.swift */,
 				05474C09291FCF5300FCF7A2 /* Assets.xcassets */,
 				05474C0B291FCF5300FCF7A2 /* LaunchScreen.storyboard */,
 				05474C0E291FCF5300FCF7A2 /* Info.plist */,
@@ -152,15 +155,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05474C19291FD39600FCF7A2 /* choiceLocalView.swift in Sources */,
-				05474C1F291FD3F700FCF7A2 /* detailView.swift in Sources */,
-				05474C21291FD40B00FCF7A2 /* reserveView.swift in Sources */,
-				05474C05291FCF5100FCF7A2 /* choiceActView.swift in Sources */,
-				05474C25291FD93400FCF7A2 /* bookListView.swift in Sources */,
+				05474C19291FD39600FCF7A2 /* ChoiceLocalView.swift in Sources */,
+				6859E48F291FDBEB0053F973 /* ChoiceCategoryView.swift in Sources */,
+				05474C1F291FD3F700FCF7A2 /* DetailView.swift in Sources */,
+				05474C21291FD40B00FCF7A2 /* ReserveView.swift in Sources */,
+				05474C05291FCF5100FCF7A2 /* ChoiceActView.swift in Sources */,
+				05474C25291FD93400FCF7A2 /* BookListView.swift in Sources */,
 				05474C01291FCF5100FCF7A2 /* AppDelegate.swift in Sources */,
-				05474C23291FD41F00FCF7A2 /* finReserveView.swift in Sources */,
+				05474C23291FD41F00FCF7A2 /* FinReserveView.swift in Sources */,
 				05474C03291FCF5100FCF7A2 /* SceneDelegate.swift in Sources */,
-				05474C1B291FD3BA00FCF7A2 /* mapView.swift in Sources */,
+				05474C1B291FD3BA00FCF7A2 /* MapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

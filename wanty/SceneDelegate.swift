@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //window = UIWindow(windowScene: windowScene)
 
             //뷰컨트롤러 인스턴스 가져오기
-            let mainViewController = choiceActView()
+            let mainViewController = ChoiceActView()
 
             //네비게이션 컨트롤러 설정
             let navVC = UINavigationController(rootViewController: mainViewController)

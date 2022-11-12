@@ -1,5 +1,5 @@
 //
-//  finReserveView.swift
+//  choiceLocalView.swift
 //  wanty
 //
 //  Created by 박윤빈 on 2022/11/12.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class finReserveView: UIViewController {
+class ChoiceLocalView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
