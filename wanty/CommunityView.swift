@@ -1,13 +1,19 @@
 //
-//  bookListView.swift
+//  CommunityView.swift
 //  wanty
 //
-//  Created by 박윤빈 on 2022/11/12.
+//  Created by Da Hae Lee on 2022/11/12.
 //
 
 import UIKit
 
-class BookListView: UIViewController {
+class CommunityView: UIViewController {
+    
+    convenience init(title: String, bgColor: UIColor) {
+        self.init()
+        self.title = title
+        self.view.backgroundColor = bgColor
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

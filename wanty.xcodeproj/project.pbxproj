@@ -17,8 +17,10 @@
 		05474C1F291FD3F700FCF7A2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1E291FD3F700FCF7A2 /* DetailView.swift */; };
 		05474C21291FD40B00FCF7A2 /* ReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C20291FD40B00FCF7A2 /* ReserveView.swift */; };
 		05474C23291FD41F00FCF7A2 /* FinReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C22291FD41F00FCF7A2 /* FinReserveView.swift */; };
-		05474C25291FD93400FCF7A2 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C24291FD93400FCF7A2 /* BookListView.swift */; };
+		05474C25291FD93400FCF7A2 /* MyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C24291FD93400FCF7A2 /* MyProfileView.swift */; };
 		6859E48F291FDBEB0053F973 /* ChoiceCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */; };
+		6859E4D1291FE7490053F973 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859E4D0291FE7490053F973 /* MainTabBarController.swift */; };
+		6859E4D3291FEB0F0053F973 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6859E4D2291FEB0F0053F973 /* CommunityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		05474C1E291FD3F700FCF7A2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		05474C20291FD40B00FCF7A2 /* ReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveView.swift; sourceTree = "<group>"; };
 		05474C22291FD41F00FCF7A2 /* FinReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinReserveView.swift; sourceTree = "<group>"; };
-		05474C24291FD93400FCF7A2 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		05474C24291FD93400FCF7A2 /* MyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileView.swift; sourceTree = "<group>"; };
 		6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceCategoryView.swift; sourceTree = "<group>"; };
+		6859E4D0291FE7490053F973 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6859E4D2291FEB0F0053F973 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,14 +74,16 @@
 			children = (
 				05474C00291FCF5100FCF7A2 /* AppDelegate.swift */,
 				05474C02291FCF5100FCF7A2 /* SceneDelegate.swift */,
+				6859E4D0291FE7490053F973 /* MainTabBarController.swift */,
 				6859E48E291FDBEB0053F973 /* ChoiceCategoryView.swift */,
 				05474C04291FCF5100FCF7A2 /* ChoiceActView.swift */,
-				05474C24291FD93400FCF7A2 /* BookListView.swift */,
+				05474C24291FD93400FCF7A2 /* MyProfileView.swift */,
 				05474C18291FD39600FCF7A2 /* ChoiceLocalView.swift */,
 				05474C1A291FD3BA00FCF7A2 /* MapView.swift */,
 				05474C1E291FD3F700FCF7A2 /* DetailView.swift */,
 				05474C20291FD40B00FCF7A2 /* ReserveView.swift */,
 				05474C22291FD41F00FCF7A2 /* FinReserveView.swift */,
+				6859E4D2291FEB0F0053F973 /* CommunityView.swift */,
 				05474C09291FCF5300FCF7A2 /* Assets.xcassets */,
 				05474C0B291FCF5300FCF7A2 /* LaunchScreen.storyboard */,
 				05474C0E291FCF5300FCF7A2 /* Info.plist */,
@@ -157,10 +163,12 @@
 			files = (
 				05474C19291FD39600FCF7A2 /* ChoiceLocalView.swift in Sources */,
 				6859E48F291FDBEB0053F973 /* ChoiceCategoryView.swift in Sources */,
+				6859E4D3291FEB0F0053F973 /* CommunityView.swift in Sources */,
+				6859E4D1291FE7490053F973 /* MainTabBarController.swift in Sources */,
 				05474C1F291FD3F700FCF7A2 /* DetailView.swift in Sources */,
 				05474C21291FD40B00FCF7A2 /* ReserveView.swift in Sources */,
 				05474C05291FCF5100FCF7A2 /* ChoiceActView.swift in Sources */,
-				05474C25291FD93400FCF7A2 /* BookListView.swift in Sources */,
+				05474C25291FD93400FCF7A2 /* MyProfileView.swift in Sources */,
 				05474C01291FCF5100FCF7A2 /* AppDelegate.swift in Sources */,
 				05474C23291FD41F00FCF7A2 /* FinReserveView.swift in Sources */,
 				05474C03291FCF5100FCF7A2 /* SceneDelegate.swift in Sources */,
