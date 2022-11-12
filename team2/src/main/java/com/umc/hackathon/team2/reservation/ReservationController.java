@@ -1,5 +1,6 @@
 package com.umc.hackathon.team2.reservation;
 
+import com.umc.hackathon.team2.config.BaseException;
 import com.umc.hackathon.team2.config.BaseResponse;
 import com.umc.hackathon.team2.reservation.model.DelReservationRes;
 import com.umc.hackathon.team2.reservation.model.PostReservationReq;
@@ -23,10 +24,25 @@ public class ReservationController {
     }
 
     @ResponseBody
-    @PostMapping("")
-    public BaseResponse<DelReservationRes> createReservation(@RequestBody PostReservationReq postReservationReq) {
+    @PostMapping("/{userIdx}")
+    public BaseResponse<PostReservationRes> createReservation(@PathVariable("userIdx") int userIdx, @RequestBody PostReservationReq postReservationReq) throws BaseException {
         try {
-            PostReservationRes postReservationRes = reservationService.
+            PostReservationRes postReservationRes = reservationService.createReservation(userIdx, postReservationReq);
+            return new BaseResponse<>(postReservationRes);
+        } catch (BaseException e) {
+            return new BaseResponse<>(e.getStatus());
+        }
+    }
+
+    @ResponseBody
+    @PatchMapping("/cancel/{reservationIdx}")
+    public BaseResponse<String> deleteReservation(@PathVariable("reservationIdx") int reservationIdx) {
+        try {
+            reservationService.deleteReservation(reservationIdx);
+            String res = "삭제되었습니다.";
+            return new BaseResponse<>(res);
+        } catch (BaseException e) {
+            return new BaseResponse<>(e.getStatus());
         }
     }
 }
