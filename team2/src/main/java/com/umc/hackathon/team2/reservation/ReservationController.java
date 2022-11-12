@@ -30,6 +30,7 @@ public class ReservationController {
             PostReservationRes postReservationRes = reservationService.createReservation(userIdx, postReservationReq);
             return new BaseResponse<>(postReservationRes);
         } catch (BaseException e) {
+            e.printStackTrace();
             return new BaseResponse<>(e.getStatus());
         }
     }
