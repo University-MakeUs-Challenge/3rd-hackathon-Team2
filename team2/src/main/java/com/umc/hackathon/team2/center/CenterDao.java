@@ -19,9 +19,10 @@ public class CenterDao {
     }
 
     public int insertCenter(CenterReq centerReq){
-        String insertCenterQuery = "INSERT INTO Center (categoryIdx, name, phone_num, regionIdx, latitude, longitude, open_time, close_time, createdAt, status) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
-        Object[] insertCenterParams = new Object[]{1, centerReq.getCenterName(), centerReq.getPhoneNum(), 1, centerReq.getLatitude(), centerReq.getLongitude(), centerReq.getOpenTime(), centerReq.getCloseTime(), "22-11-13", "ACTIVE"};
+        //categoryIdx, regionIdx 추가 필요
+        String insertCenterQuery = "INSERT INTO Center (name, phone_num, latitude, longitude, open_time, close_time, createdAt, status) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
+        Object[] insertCenterParams = new Object[]{centerReq.getCenterName(), centerReq.getPhoneNum(), centerReq.getLatitude(), centerReq.getLongitude(), centerReq.getOpenTime(), centerReq.getCloseTime(), "22-11-13", "ACTIVE"};
         this.jdbcTemplate.update(insertCenterQuery, insertCenterParams);
 
         String lastInsertIdQuery = "select last_insert_id()";
