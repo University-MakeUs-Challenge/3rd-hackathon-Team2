@@ -12,10 +12,10 @@ public class ReservationDao {
 
     private JdbcTemplate jdbcTemplate;
 
-//    @Autowired
-//    public void setDataSource(DataSource dataSource){
-//        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-//    }
+    @Autowired
+    public void setDataSource(DataSource dataSource){
+        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+    }
 
 /*private int centerIdx;
     private int centerReservationIdx;
@@ -25,13 +25,16 @@ public class ReservationDao {
     private String status;*/
 
     // 예약 생성
-//    public int createReservation(int userIdx, PostReservationReq postReservationReq) {
-//        String insertReservationQuery =
-//                "INSERT INTO Reservation(userIdx, participationDate, price)" +
-//                        "VALUES (?, ?, ?);";
-//        Object[] insertReservationParams = new Object[]{userIdx, postReservationReq.getParticipationDate(),
-//                postReservationReq.getPrice()};
-////        this.jdbcTemplate
-//    }
+    public int createReservation(int userIdx, PostReservationReq postReservationReq) {
+        String insertReservationQuery =
+                "INSERT INTO Reservation(userIdx, participationDate, price)" +
+                        "VALUES (?, ?, ?);";
+        Object[] insertReservationParams = new Object[]{userIdx, postReservationReq.getParticipationDate(),
+                postReservationReq.getPrice()};
+        this.jdbcTemplate.update(insertReservationQuery, insertReservationParams);
+
+        String lastInsertIdQuery = "select last_insert_id()";
+        return this.jdbcTemplate.queryForObject(lastInsertIdQuery, int.class);
+    }
 
 }
