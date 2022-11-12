@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class choiceActView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = .white
+        self.title = "hi"
     }
 
 
