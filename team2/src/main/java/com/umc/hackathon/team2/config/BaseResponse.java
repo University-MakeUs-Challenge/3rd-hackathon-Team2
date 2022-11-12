@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-import static com.example.demo.config.BaseResponseStatus.SUCCESS;
+import static com.umc.hackathon.team2.config.BaseResponseStatus.SUCCESS;
 
 @Getter
 @AllArgsConstructor
@@ -28,7 +28,7 @@ public class BaseResponse<T> {
     }
 
     // 요청에 실패한 경우
-    public BaseResponse(com.example.demo.config.BaseResponseStatus status) {
+    public BaseResponse(BaseResponseStatus status) {
         this.isSuccess = status.isSuccess();
         this.message = status.getMessage();
         this.code = status.getCode();

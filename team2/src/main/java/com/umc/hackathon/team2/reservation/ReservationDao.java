@@ -1,6 +1,8 @@
 package com.umc.hackathon.team2.reservation;
 
 import com.umc.hackathon.team2.reservation.model.PostReservationReq;
+import com.umc.hackathon.team2.reservation.model.PostReservationRes;
+import com.umc.hackathon.team2.reservation.model.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -37,4 +39,16 @@ public class ReservationDao {
         return this.jdbcTemplate.queryForObject(lastInsertIdQuery, int.class);
     }
 
+    //게시글 삭제
+    public int updateReservationStatus(int reservationIdx){
+        String deleteReservationQuery = "UPDATE Reservation\n" +
+                "        SET status = 'INACTIVE'\n" +
+                "        WHERE reservationIdx = ? ";
+        Object[] deleteUserParams = new Object[]{reservationIdx};
+
+        return this.jdbcTemplate.update(deleteReservationQuery, deleteUserParams);
+    }
+
+    //게시글 조회
+//    public Reservation getReservation(int userIdx)
 }
