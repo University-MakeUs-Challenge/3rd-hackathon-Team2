@@ -17,6 +17,7 @@
 		05474C1F291FD3F700FCF7A2 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C1E291FD3F700FCF7A2 /* detailView.swift */; };
 		05474C21291FD40B00FCF7A2 /* reserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C20291FD40B00FCF7A2 /* reserveView.swift */; };
 		05474C23291FD41F00FCF7A2 /* finReserveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C22291FD41F00FCF7A2 /* finReserveView.swift */; };
+		05474C25291FD93400FCF7A2 /* bookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05474C24291FD93400FCF7A2 /* bookListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		05474C1E291FD3F700FCF7A2 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
 		05474C20291FD40B00FCF7A2 /* reserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveView.swift; sourceTree = "<group>"; };
 		05474C22291FD41F00FCF7A2 /* finReserveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finReserveView.swift; sourceTree = "<group>"; };
+		05474C24291FD93400FCF7A2 /* bookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bookListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				05474C00291FCF5100FCF7A2 /* AppDelegate.swift */,
 				05474C02291FCF5100FCF7A2 /* SceneDelegate.swift */,
 				05474C04291FCF5100FCF7A2 /* choiceActView.swift */,
+				05474C24291FD93400FCF7A2 /* bookListView.swift */,
 				05474C18291FD39600FCF7A2 /* choiceLocalView.swift */,
 				05474C1A291FD3BA00FCF7A2 /* mapView.swift */,
 				05474C1E291FD3F700FCF7A2 /* detailView.swift */,
@@ -153,6 +156,7 @@
 				05474C1F291FD3F700FCF7A2 /* detailView.swift in Sources */,
 				05474C21291FD40B00FCF7A2 /* reserveView.swift in Sources */,
 				05474C05291FCF5100FCF7A2 /* choiceActView.swift in Sources */,
+				05474C25291FD93400FCF7A2 /* bookListView.swift in Sources */,
 				05474C01291FCF5100FCF7A2 /* AppDelegate.swift in Sources */,
 				05474C23291FD41F00FCF7A2 /* finReserveView.swift in Sources */,
 				05474C03291FCF5100FCF7A2 /* SceneDelegate.swift in Sources */,
