@@ -14,7 +14,8 @@ public class CenterService {
     public CenterRes createCenter(CenterReq centerReq){
 
         int centerIdx = centerDao.insertCenter(centerReq);
-
+        CenterRes centerRes = centerDao.selectCenterInfo(centerIdx);
+        return centerRes;
     }
 
 

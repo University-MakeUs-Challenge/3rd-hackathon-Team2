@@ -19,9 +19,9 @@ public class CenterDao {
     }
 
     public int insertCenter(CenterReq centerReq){
-        String insertCenterQuery = "insert into Center (categoryIdx, name, phone_num, regionIdx, latitude, longitude, open_time, close_time, createdAt, status) " +
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        Object[] insertCenterParams = new Object[]{centerReq.getCenterName(), centerReq.getPhoneNum(), centerReq.getLatitude(), centerReq.getLatitude(), centerReq.getOpenTime(), centerReq.getCloseTime(), "ACTIVE"};
+        String insertCenterQuery = "INSERT INTO Center (categoryIdx, name, phone_num, regionIdx, latitude, longitude, open_time, close_time, createdAt, status) " +
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        Object[] insertCenterParams = new Object[]{1, centerReq.getCenterName(), centerReq.getPhoneNum(), 1, centerReq.getLatitude(), centerReq.getLongitude(), centerReq.getOpenTime(), centerReq.getCloseTime(), "22-11-13", "ACTIVE"};
         this.jdbcTemplate.update(insertCenterQuery, insertCenterParams);
 
         String lastInsertIdQuery = "select last_insert_id()";
@@ -32,15 +32,23 @@ public class CenterDao {
         String selectCenterInfoQuery = "SELECT c.centerIdx, " +
                 "                              c.name, " +
                 "                              c.phone_num, " +
-                "                              c.regionIdx, " +
                 "                              c.latitude," +
                 "                              c.longitude," +
                 "                              c.open_time, " +
                 "                              c.close_time, " +
-                "                              c.createdAt, " +
-                "                              c.status" +
                 "                       FROM Center as c" +
-                "                       WHERE c.centerIdx = ?"
+                "                       WHERE c.centerIdx = ?;";
+        int selectCenterInfoParam  = centerIdx;
+        return this.jdbcTemplate.queryForObject(selectCenterInfoQuery,
+                (rs, rowNum) -> new CenterRes(
+                        rs.getInt("centerIdx"),
+                        rs.getString("name"),
+                        rs.getString("phone_num"),
+                        rs.getDouble("latitude"),
+                        rs.getDouble("longitude"),
+                        rs.getInt("openTime"),
+                        rs.getInt("closeTime")
+                ), selectCenterInfoParam);
     }
 
 
