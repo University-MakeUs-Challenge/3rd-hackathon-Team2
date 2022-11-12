@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
+import java.util.List;
 
 @Repository
 public class CenterDao {
@@ -51,6 +52,21 @@ public class CenterDao {
                         rs.getInt("closeTime")
                 ), selectCenterInfoParam);
     }
+
+    public List<CenterRes> selectCenterList(int categoryIdx, int regionIdx){
+        String selectCenterListQuery = "SELECT c.centerIdx, " +
+                "                              c.name, " +
+                "                              c.phone_num, " +
+                "                              c.latitude," +
+                "                              c.longitude," +
+                "                              c.open_time, " +
+                "                              c.close_time, " +
+                "                       FROM Center as c" +
+                "                       join Category as ctg" +
+                "                            on c.categoryIdx = ctg.categoryIdx"+
+                "                       WHERE c.categoryIdx = category?;";
+    }
+
 
 
 }
