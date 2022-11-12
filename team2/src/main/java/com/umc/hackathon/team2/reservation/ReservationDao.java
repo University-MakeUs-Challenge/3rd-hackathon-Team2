@@ -44,7 +44,7 @@ public class ReservationDao {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd", Locale.US);
         LocalDate date = LocalDate.parse(reservationDateString, formatter);
 
-        Object[] insertReservationParams = new Object[]{userIdx, 1, "22-11-13", postReservationReq.getCenterReservationIdx(), date,
+        Object[] insertReservationParams = new Object[]{userIdx, postReservationReq.getCenterIdx(), "22-11-13", postReservationReq.getCenterReservationIdx(), date,
                 postReservationReq.getPrice(), null, "ACTIVE"};
         this.jdbcTemplate.update(insertReservationQuery, insertReservationParams);
 
