@@ -17,11 +17,35 @@ class MapKitViewController: UIViewController {
         // 장소명
         self.title = "강남구"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(named: "MainColor")!]
         
         setMapContraints()
         setFilterButtonContraints()
         addMapPins()
+        
+        setButtonContraint()
+    }
+    
+    let button: UIButton = {
+       let button = UIButton()
+        button.addTarget(self, action: #selector(buttonDidTap), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    @objc func buttonDidTap() {
+        let detailView = DetailView()
+        self.navigationController?.pushViewController(detailView, animated: true)
+    }
+    
+    func setButtonContraint() {
+        view.addSubview(button)
+        
+        button.snp.makeConstraints { make in
+            make.top.equalTo(self.view).offset(50)
+            make.bottom.equalTo(self.view).offset(50)
+            make.trailing.equalTo(self.view).offset(50)
+            make.leading.equalTo(self.view).offset(50)
+        }
     }
     
     // Mapkit 사용하기
@@ -81,6 +105,7 @@ class MapKitViewController: UIViewController {
         }
     }
     
+    // add map fin
     func addMapPins() {
         for center in CenterData {
             let centerPin = MKPointAnnotation()
@@ -92,10 +117,9 @@ class MapKitViewController: UIViewController {
             mapView.addAnnotation(centerPin)
         }
     }
-
-}
-
-extension MapKitViewController: MKMapViewDelegate {
     
+    
+
 }
+
 
