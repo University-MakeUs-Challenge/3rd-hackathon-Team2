@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChoiceActView: UIViewController {
+class ChoiceActView: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
